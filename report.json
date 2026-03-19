@@ -1,0 +1,280 @@
+{
+  "stats": {
+    "suites": 4,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "start": "2026-03-18T15:49:31.827Z",
+    "end": "2026-03-18T15:50:07.796Z",
+    "duration": 35969
+  },
+  "results": [
+    {
+      "uuid": "1618dbbf-7d0e-4c21-ba66-a23e5b19df30",
+      "title": "",
+      "fullFile": "cypress\\e2e\\tests\\login.cy.js",
+      "file": "cypress\\e2e\\tests\\login.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c4e3f730-79d9-4052-9f66-162362404d9a",
+          "title": "loginPage",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "login",
+              "fullTitle": "loginPage login",
+              "timedOut": null,
+              "duration": 4265,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "auth.entrEmail();\nauth.enterPassword();\nauth.clickLogin();\nauth.verifyLoginSuccess();",
+              "err": {},
+              "uuid": "5c16677a-789c-4d82-ab12-bf2f3266ce1c",
+              "parentUUID": "c4e3f730-79d9-4052-9f66-162362404d9a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "5c16677a-789c-4d82-ab12-bf2f3266ce1c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4265,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "ac3fc82d-9fff-4b12-9f9f-dc5b2dfe37a7",
+      "title": "",
+      "fullFile": "cypress\\e2e\\tests\\signupLogin.cy.js",
+      "file": "cypress\\e2e\\tests\\signupLogin.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "90fe921f-8346-4ba3-bbb1-3fd4eef89ba2",
+          "title": "page Signup and Login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Signup",
+              "fullTitle": "page Signup and Login Signup",
+              "timedOut": null,
+              "duration": 5393,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "signupLogin.signupLoginsPage();",
+              "err": {},
+              "uuid": "d3c85e4d-7590-422c-a059-80792ca0c441",
+              "parentUUID": "90fe921f-8346-4ba3-bbb1-3fd4eef89ba2",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d3c85e4d-7590-422c-a059-80792ca0c441"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 5393,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "bc7e0cb2-6169-474a-89b7-97b9d5417003",
+      "title": "",
+      "fullFile": "cypress\\e2e\\tests\\valideCartProduct.cy.js",
+      "file": "cypress\\e2e\\tests\\valideCartProduct.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7ef4e203-391c-4989-85a0-a3cb30aff8bc",
+          "title": "valide cart product",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Signup",
+              "fullTitle": "valide cart product Signup",
+              "timedOut": null,
+              "duration": 5598,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "signupLogin.signupLoginsPage();",
+              "err": {},
+              "uuid": "58a873da-49df-4c13-9283-6d11b1ee99f6",
+              "parentUUID": "7ef4e203-391c-4989-85a0-a3cb30aff8bc",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "58a873da-49df-4c13-9283-6d11b1ee99f6"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 5598,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "5a94fb32-9aeb-469c-8436-ce4acd010915",
+      "title": "",
+      "fullFile": "cypress\\e2e\\tests\\cartProduct.cy.js",
+      "file": "cypress\\e2e\\tests\\cartProduct.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d569ff27-3f00-4460-b067-d06d960fce7f",
+          "title": "Add Product To Cart",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "goToHomePage",
+              "fullTitle": "Add Product To Cart goToHomePage",
+              "timedOut": null,
+              "duration": 4742,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "addProduct.visitProductPolo();\naddProduct.BrandPolo();\naddProduct.addProductPolo();\nactionAddProduct.closePopup();",
+              "err": {},
+              "uuid": "0dd766c3-9ed7-48e8-b975-b00536a35ce2",
+              "parentUUID": "d569ff27-3f00-4460-b067-d06d960fce7f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "0dd766c3-9ed7-48e8-b975-b00536a35ce2"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4742,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "timestamp": false
+      },
+      "version": "6.3.2"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+    "url":"https://automationexercise.com/",
+    "urlPageBrandProducts":"https://automationexercise.com/brand_products/Polo",
+    "login":"//a[@href='/login']",
+    "signupName":"input[data-qa='signup-name']",
+    "signupEmail":"//input[@data-qa='signup-email']",
+    "signupButton":"button[data-qa='signup-button']",
+    "loginMail":"input[data-qa='login-email']",
+    "loginPassword":"input[data-qa='login-password']",
+    "loginButton":"button[data-qa='login-button']",
+    "fristName":"input[data-qa='first_name']",
+    "lastName":"input[data-qa='last_name']",
+    "company":"input[data-qa='company']",
+    "adress1":"input[data-qa='address']",
+    "adress2":"input[data-qa='address2']",
+    "continy":"select[data-qa='country']",
+    "state":"input[data-qa='state']",
+    "city":"input[data-qa='city']",
+    "zipCode":"input[data-qa='zipcode']",
+    "phoneMobile":"input[data-qa='mobile_number']",
+    "creatAccount":"button[data-qa='create-account']",
+    "continue":"a[data-qa='continue-button']",
+    "password":"#password",
+    "day":"#days",
+    "month":"#months",
+    "year":"#years",
+    "checkBox":"input[type='checkbox']",
+    "checkBox1":"input[type='checkbox']",
+    "brandPorlo":"a[href='/brand_products/Polo']",
+    "addProductPolo1":"[data-product-id='1']"
+
+    
+
+    
+}
