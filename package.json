@@ -8,7 +8,8 @@
   "report:merge": "npx mochawesome-merge cypress/reports/*.json -o report.json",
   "report:gen": "npx marge report.json --reportDir cypress/reports --reportFilename index.html --inline",
   "report:open": "start cypress/reports/index.html",
-  "test:full": "npm run report:clean && npx cypress run && npm run report:merge && npm run report:gen && npm run report:open"
+   "test:full": "npm run report:clean && npx cypress run && npm run report:merge && npm run report:gen"    
+
 },
   "keywords": [],
   "author": "",
