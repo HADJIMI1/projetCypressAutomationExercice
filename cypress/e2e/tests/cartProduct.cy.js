@@ -12,7 +12,7 @@ describe("Add Product To Cart", () => {
     let actionAddProduct = new ActionProductToCart()
 
 
-
+// executer cette commande avant tout les test
     beforeEach(() => {
         addProduct.visitProductPolo()
     })
