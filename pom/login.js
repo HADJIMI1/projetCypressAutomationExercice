@@ -26,7 +26,7 @@ import users from "../cypress/fixtures/users.json"
         const loginSuccess=cy.contains(" Logged in as ")
         loginSuccess.should("be.visible")
     }
-
+    
 }
 
 

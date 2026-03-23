@@ -3,14 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-"scripts": {
-  "report:clean": "if exist cypress\\reports rmdir /s /q cypress\\reports",
-  "report:merge": "npx mochawesome-merge cypress/reports/*.json -o report.json",
-  "report:gen": "npx marge report.json --reportDir cypress/reports --reportFilename index.html --inline",
-  "report:open": "start cypress/reports/index.html",
-   "test:full": "npm run report:clean && npx cypress run && npm run report:merge && npm run report:gen"    
-
-},
+  "scripts": {
+    "report:clean": "if exist cypress\\reports rmdir /s /q cypress\\reports",
+    "report:merge": "npx mochawesome-merge cypress/reports/*.json -o report.json",
+    "report:gen": "npx marge report.json --reportDir cypress/reports --reportFilename index.html --inline",
+    "report:open": "start cypress/reports/index.html",
+    "test:full": "npm run report:clean && npx cypress run && npm run report:merge && npm run report:gen"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -18,7 +17,7 @@
   "devDependencies": {
     "@badeball/cypress-cucumber-preprocessor": "^24.0.1",
     "@bahmutov/cypress-esbuild-preprocessor": "^2.2.8",
-    "cypress": "^15.11.0",
+    "cypress": "^15.12.0",
     "cypress-xpath": "^2.0.1",
     "esbuild": "^0.27.4",
     "mocha": "^11.7.5",
