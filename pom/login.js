@@ -9,13 +9,13 @@ import users from "../cypress/fixtures/users.json"
         cy.visit("https://automationexercise.com/login");
     }
 
-    entrEmail() {
+    entrEmail(email) {
         const mail = cy.get(data.loginMail)
-        mail.type(users.email);
+        mail.type(email);
     }
-    enterPassword() {
+    enterPassword(passwordEnter) {
         const password = cy.get(data.loginPassword)
-        password.type(users.password);
+        password.type(passwordEnter);
         
     }
     clickLogin(){
@@ -25,6 +25,11 @@ import users from "../cypress/fixtures/users.json"
     verifyLoginSuccess(){
         const loginSuccess=cy.contains(" Logged in as ")
         loginSuccess.should("be.visible")
+    }
+    errorConnect(){
+       cy.get('p[style="color: red;"]')
+      .should('be.visible')
+      .and('contain', 'Your email or password is incorrect!')
     }
     
 }
