@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2026-03-18T15:49:31.827Z",
-    "end": "2026-03-18T15:49:38.828Z",
-    "duration": 7001,
+    "start": "2026-03-23T15:40:14.033Z",
+    "end": "2026-03-23T15:40:22.599Z",
+    "duration": 8566,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "5a94fb32-9aeb-469c-8436-ce4acd010915",
+      "uuid": "345bff3b-3ef3-40f1-902f-5476a07775ed",
       "title": "",
       "fullFile": "cypress\\e2e\\tests\\cartProduct.cy.js",
       "file": "cypress\\e2e\\tests\\cartProduct.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "d569ff27-3f00-4460-b067-d06d960fce7f",
+          "uuid": "a3584b92-8e9d-41e9-9dd2-319ed0d1052e",
           "title": "Add Product To Cart",
           "fullFile": "",
           "file": "",
@@ -38,29 +38,29 @@
               "title": "goToHomePage",
               "fullTitle": "Add Product To Cart goToHomePage",
               "timedOut": null,
-              "duration": 4742,
+              "duration": 6257,
               "state": "passed",
-              "speed": "fast",
+              "speed": "medium",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
               "code": "addProduct.visitProductPolo();\naddProduct.BrandPolo();\naddProduct.addProductPolo();\nactionAddProduct.closePopup();",
               "err": {},
-              "uuid": "0dd766c3-9ed7-48e8-b975-b00536a35ce2",
-              "parentUUID": "d569ff27-3f00-4460-b067-d06d960fce7f",
+              "uuid": "1d318839-6836-4409-b989-dd17044a7840",
+              "parentUUID": "a3584b92-8e9d-41e9-9dd2-319ed0d1052e",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "0dd766c3-9ed7-48e8-b975-b00536a35ce2"
+            "1d318839-6836-4409-b989-dd17044a7840"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 4742,
+          "duration": 6257,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

@@ -19,6 +19,7 @@ let actionButton=new ActionProductToCart()
         infoCart.priceProductRs15000()
         infoCart.verifyPrice()
         infoCart.descripProduct()
+        infoCart.textDescripProduct()
         
     })
 })

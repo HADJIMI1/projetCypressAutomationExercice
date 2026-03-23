@@ -6,7 +6,7 @@ import users from "../cypress/fixtures/users.json"
  export default class LoginPage {
 
     visitLoginPage() {
-        cy.visit("https://automationexercise.com/login");
+        cy.visit();
     }
 
     entrEmail(email) {
@@ -29,7 +29,7 @@ import users from "../cypress/fixtures/users.json"
     errorConnect(){
        cy.get('p[style="color: red;"]')
       .should('be.visible')
-      .and('contain', 'Your email or password is incorrect!')
+      .and('contain','Your email or password is incorrect!')
     }
     
 }

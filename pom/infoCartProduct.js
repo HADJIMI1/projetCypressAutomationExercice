@@ -49,8 +49,18 @@ export default class InfoCartProduct {
         cy.get(".product-information > :nth-child(7)").should("be.visible")
         cy.get(".product-information > :nth-child(8)").should("be.visible")    
       }
+      textDescripProduct(){
+
+
+       let textDescrip = "Stylish Dress";
+
+cy.get(".product-information > h2").then((x) => {
+    const npName = x.text().trim();
+    assert(npName,textDescrip);
+})
 
 
 
+}
 
 }
