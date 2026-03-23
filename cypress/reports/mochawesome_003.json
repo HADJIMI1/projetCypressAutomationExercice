@@ -1,14 +1,14 @@
 {
   "stats": {
     "suites": 1,
-    "tests": 1,
-    "passes": 1,
+    "tests": 2,
+    "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2026-03-18T15:50:00.461Z",
-    "end": "2026-03-18T15:50:07.796Z",
-    "duration": 7335,
-    "testsRegistered": 1,
+    "start": "2026-03-23T15:41:08.346Z",
+    "end": "2026-03-23T15:41:20.542Z",
+    "duration": 12196,
+    "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "bc7e0cb2-6169-474a-89b7-97b9d5417003",
+      "uuid": "9924d6ba-38e6-4d1d-bffb-db8cef881746",
       "title": "",
       "fullFile": "cypress\\e2e\\tests\\valideCartProduct.cy.js",
       "file": "cypress\\e2e\\tests\\valideCartProduct.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "7ef4e203-391c-4989-85a0-a3cb30aff8bc",
+          "uuid": "9e326d4e-64c1-4959-93cf-1c939eaecd32",
           "title": "valide cart product",
           "fullFile": "",
           "file": "",
@@ -35,32 +35,51 @@
           "afterHooks": [],
           "tests": [
             {
-              "title": "Signup",
-              "fullTitle": "valide cart product Signup",
+              "title": "verifie l'url existe",
+              "fullTitle": "valide cart product verifie l'url existe",
               "timedOut": null,
-              "duration": 5598,
+              "duration": 1820,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.url().should(\"contain\", \"automationexercise\");",
+              "err": {},
+              "uuid": "99af7a69-be95-4b86-8fdb-d80328437d5d",
+              "parentUUID": "9e326d4e-64c1-4959-93cf-1c939eaecd32",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "auth and Ajouter le produit to cart ",
+              "fullTitle": "valide cart product auth and Ajouter le produit to cart ",
+              "timedOut": null,
+              "duration": 8820,
               "state": "passed",
               "speed": "medium",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "signupLogin.signupLoginsPage();",
+              "code": "auth.clickSignupLogin();\nlogin.entrEmail();\nlogin.enterPassword();\nlogin.clickLogin();\ninserPage.verifieVisibilityHomePage();\naddCartProdect.visitProductPolo();\naddCartProdect.BrandPolo();\naddCartProdect.addProductPolo();\nactionProduct.closePopup();",
               "err": {},
-              "uuid": "58a873da-49df-4c13-9283-6d11b1ee99f6",
-              "parentUUID": "7ef4e203-391c-4989-85a0-a3cb30aff8bc",
+              "uuid": "bcfebb6d-dbbc-45bb-997a-e7eba644f44f",
+              "parentUUID": "9e326d4e-64c1-4959-93cf-1c939eaecd32",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "58a873da-49df-4c13-9283-6d11b1ee99f6"
+            "99af7a69-be95-4b86-8fdb-d80328437d5d",
+            "bcfebb6d-dbbc-45bb-997a-e7eba644f44f"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 5598,
+          "duration": 10640,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

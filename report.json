@@ -1,24 +1,24 @@
 {
   "stats": {
-    "suites": 4,
-    "tests": 4,
-    "passes": 4,
+    "suites": 5,
+    "tests": 6,
+    "passes": 6,
     "pending": 0,
     "failures": 0,
-    "testsRegistered": 4,
+    "testsRegistered": 6,
     "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
     "skipped": 0,
     "hasSkipped": false,
-    "start": "2026-03-18T15:49:31.827Z",
-    "end": "2026-03-18T15:50:07.796Z",
-    "duration": 35969
+    "start": "2026-03-23T15:40:14.033Z",
+    "end": "2026-03-23T15:41:30.840Z",
+    "duration": 76807
   },
   "results": [
     {
-      "uuid": "1618dbbf-7d0e-4c21-ba66-a23e5b19df30",
+      "uuid": "7e03ee04-d071-436a-8048-04ab284f5a47",
       "title": "",
       "fullFile": "cypress\\e2e\\tests\\login.cy.js",
       "file": "cypress\\e2e\\tests\\login.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "c4e3f730-79d9-4052-9f66-162362404d9a",
+          "uuid": "30384975-a6d9-40ee-89cb-5e6a5ee18df0",
           "title": "loginPage",
           "fullFile": "",
           "file": "",
@@ -38,29 +38,29 @@
               "title": "login",
               "fullTitle": "loginPage login",
               "timedOut": null,
-              "duration": 4265,
+              "duration": 27648,
               "state": "passed",
-              "speed": "fast",
+              "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
               "code": "auth.entrEmail();\nauth.enterPassword();\nauth.clickLogin();\nauth.verifyLoginSuccess();",
               "err": {},
-              "uuid": "5c16677a-789c-4d82-ab12-bf2f3266ce1c",
-              "parentUUID": "c4e3f730-79d9-4052-9f66-162362404d9a",
+              "uuid": "6d6e0050-8384-49c0-acf0-b76ca8b486bf",
+              "parentUUID": "30384975-a6d9-40ee-89cb-5e6a5ee18df0",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "5c16677a-789c-4d82-ab12-bf2f3266ce1c"
+            "6d6e0050-8384-49c0-acf0-b76ca8b486bf"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 4265,
+          "duration": 27648,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -76,7 +76,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "ac3fc82d-9fff-4b12-9f9f-dc5b2dfe37a7",
+      "uuid": "4320a107-d0e6-4925-8e81-dd1e47a2836e",
       "title": "",
       "fullFile": "cypress\\e2e\\tests\\signupLogin.cy.js",
       "file": "cypress\\e2e\\tests\\signupLogin.cy.js",
@@ -85,7 +85,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "90fe921f-8346-4ba3-bbb1-3fd4eef89ba2",
+          "uuid": "64f5995b-a7c8-4990-8e8c-7acb9f114f89",
           "title": "page Signup and Login",
           "fullFile": "",
           "file": "",
@@ -96,7 +96,7 @@
               "title": "Signup",
               "fullTitle": "page Signup and Login Signup",
               "timedOut": null,
-              "duration": 5393,
+              "duration": 6166,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -105,20 +105,20 @@
               "context": null,
               "code": "signupLogin.signupLoginsPage();",
               "err": {},
-              "uuid": "d3c85e4d-7590-422c-a059-80792ca0c441",
-              "parentUUID": "90fe921f-8346-4ba3-bbb1-3fd4eef89ba2",
+              "uuid": "644cff9a-4afd-443e-b552-776bcb7ea3f0",
+              "parentUUID": "64f5995b-a7c8-4990-8e8c-7acb9f114f89",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "d3c85e4d-7590-422c-a059-80792ca0c441"
+            "644cff9a-4afd-443e-b552-776bcb7ea3f0"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 5393,
+          "duration": 6166,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -134,7 +134,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "bc7e0cb2-6169-474a-89b7-97b9d5417003",
+      "uuid": "9924d6ba-38e6-4d1d-bffb-db8cef881746",
       "title": "",
       "fullFile": "cypress\\e2e\\tests\\valideCartProduct.cy.js",
       "file": "cypress\\e2e\\tests\\valideCartProduct.cy.js",
@@ -143,7 +143,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "7ef4e203-391c-4989-85a0-a3cb30aff8bc",
+          "uuid": "9e326d4e-64c1-4959-93cf-1c939eaecd32",
           "title": "valide cart product",
           "fullFile": "",
           "file": "",
@@ -151,32 +151,51 @@
           "afterHooks": [],
           "tests": [
             {
-              "title": "Signup",
-              "fullTitle": "valide cart product Signup",
+              "title": "verifie l'url existe",
+              "fullTitle": "valide cart product verifie l'url existe",
               "timedOut": null,
-              "duration": 5598,
+              "duration": 1820,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.url().should(\"contain\", \"automationexercise\");",
+              "err": {},
+              "uuid": "99af7a69-be95-4b86-8fdb-d80328437d5d",
+              "parentUUID": "9e326d4e-64c1-4959-93cf-1c939eaecd32",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "auth and Ajouter le produit to cart ",
+              "fullTitle": "valide cart product auth and Ajouter le produit to cart ",
+              "timedOut": null,
+              "duration": 8820,
               "state": "passed",
               "speed": "medium",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "signupLogin.signupLoginsPage();",
+              "code": "auth.clickSignupLogin();\nlogin.entrEmail();\nlogin.enterPassword();\nlogin.clickLogin();\ninserPage.verifieVisibilityHomePage();\naddCartProdect.visitProductPolo();\naddCartProdect.BrandPolo();\naddCartProdect.addProductPolo();\nactionProduct.closePopup();",
               "err": {},
-              "uuid": "58a873da-49df-4c13-9283-6d11b1ee99f6",
-              "parentUUID": "7ef4e203-391c-4989-85a0-a3cb30aff8bc",
+              "uuid": "bcfebb6d-dbbc-45bb-997a-e7eba644f44f",
+              "parentUUID": "9e326d4e-64c1-4959-93cf-1c939eaecd32",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "58a873da-49df-4c13-9283-6d11b1ee99f6"
+            "99af7a69-be95-4b86-8fdb-d80328437d5d",
+            "bcfebb6d-dbbc-45bb-997a-e7eba644f44f"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 5598,
+          "duration": 10640,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -192,7 +211,65 @@
       "_timeout": 2000
     },
     {
-      "uuid": "5a94fb32-9aeb-469c-8436-ce4acd010915",
+      "uuid": "2a5d018e-8a31-4832-898a-9222cbbe75d4",
+      "title": "",
+      "fullFile": "cypress\\e2e\\tests\\verify-InformationProduct-Cart.cy.js",
+      "file": "cypress\\e2e\\tests\\verify-InformationProduct-Cart.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "78614632-ce1c-4cab-911d-120c4757242a",
+          "title": "verifie cordonne",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "verifie cordonne",
+              "fullTitle": "verifie cordonne verifie cordonne",
+              "timedOut": null,
+              "duration": 6131,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "homePages.gotoHomePage();\ninfoCart.selectProduct_Madame();\ninfoCart.productRS1000();\nactionButton.closePopup();\ninfoCart.productRs15000();\nactionButton.closePopup();\ninfoCart.viewProduct();\ninfoCart.priceProductRs15000();\ninfoCart.verifyPrice();\ninfoCart.descripProduct();",
+              "err": {},
+              "uuid": "c731bd12-2429-4308-a533-62054969dea7",
+              "parentUUID": "78614632-ce1c-4cab-911d-120c4757242a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c731bd12-2429-4308-a533-62054969dea7"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6131,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "345bff3b-3ef3-40f1-902f-5476a07775ed",
       "title": "",
       "fullFile": "cypress\\e2e\\tests\\cartProduct.cy.js",
       "file": "cypress\\e2e\\tests\\cartProduct.cy.js",
@@ -201,7 +278,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "d569ff27-3f00-4460-b067-d06d960fce7f",
+          "uuid": "a3584b92-8e9d-41e9-9dd2-319ed0d1052e",
           "title": "Add Product To Cart",
           "fullFile": "",
           "file": "",
@@ -212,29 +289,29 @@
               "title": "goToHomePage",
               "fullTitle": "Add Product To Cart goToHomePage",
               "timedOut": null,
-              "duration": 4742,
+              "duration": 6257,
               "state": "passed",
-              "speed": "fast",
+              "speed": "medium",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
               "code": "addProduct.visitProductPolo();\naddProduct.BrandPolo();\naddProduct.addProductPolo();\nactionAddProduct.closePopup();",
               "err": {},
-              "uuid": "0dd766c3-9ed7-48e8-b975-b00536a35ce2",
-              "parentUUID": "d569ff27-3f00-4460-b067-d06d960fce7f",
+              "uuid": "1d318839-6836-4409-b989-dd17044a7840",
+              "parentUUID": "a3584b92-8e9d-41e9-9dd2-319ed0d1052e",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "0dd766c3-9ed7-48e8-b975-b00536a35ce2"
+            "1d318839-6836-4409-b989-dd17044a7840"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 4742,
+          "duration": 6257,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
