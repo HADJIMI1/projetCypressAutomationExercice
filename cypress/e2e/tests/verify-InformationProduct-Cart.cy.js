@@ -7,7 +7,7 @@ let homePages=new HomePage()
 let infoCart=new InfoCartProduct()
 let actionButton=new ActionProductToCart()
 
-
+// je suis sur la lsite d 'attente 
     it("verifie cordonne", ()=>{
         homePages.gotoHomePage()
         infoCart.selectProduct_Madame()
