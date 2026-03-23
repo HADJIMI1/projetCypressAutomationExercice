@@ -6,7 +6,7 @@ import users from "../cypress/fixtures/users.json"
  export default class LoginPage {
 
     visitLoginPage() {
-        cy.visit();
+        cy.visit("https://automationexercise.com/login");
     }
 
     entrEmail(email) {
