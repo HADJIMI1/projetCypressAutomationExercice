@@ -7,7 +7,7 @@ import data from "../../../data/Locators.json"
 describe("login fonctionalité", ()=>{
  let auth=new LoginPage()
     beforeEach(()=>{
-        auth.visitLoginPage(data.urlLogin)
+        auth.visitLoginPage()
     })
    
     context("avec des identifient valide", ()=>{
