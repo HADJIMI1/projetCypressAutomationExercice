@@ -13,10 +13,13 @@ describe("login fonctionalité", () => {
 
     context("avec des identifient valide", () => {
         it("connexion reussite", () => {
-            auth.entrEmail("salimhadjimi640010@gmail.com")
+            cy.fixture('users').then((dataSet)=>{
+                 auth.entrEmail(dataSet.validUser.email)
             auth.enterPassword("Salimsalim.14071995")
               auth.clickLogin()
             auth.verifyLoginSuccess()
+            })
+           
     })
     })
     context("avec les indentifient invalide", () => {
