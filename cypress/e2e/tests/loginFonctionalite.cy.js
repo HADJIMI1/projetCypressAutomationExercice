@@ -1,6 +1,5 @@
 import LoginPage from "../../../pom/login"
-import data from "../../../data/Locators.json"
-import users from "../../fixtures/users.json"
+/// <reference types="cypress" />
 
 
 
@@ -13,21 +12,24 @@ describe("login fonctionalité", () => {
 
     context("avec des identifient valide", () => {
         it("connexion reussite", () => {
-            cy.fixture('users').then((dataSet)=>{
-                 auth.entrEmail(dataSet.validUser.email)
-            auth.enterPassword("Salimsalim.14071995")
-              auth.clickLogin()
-            auth.verifyLoginSuccess()
+            cy.fixture('users').then((dataSet) => {
+                auth.entrEmail(dataSet.validUser.email)
+                auth.enterPassword(dataSet.validUser.password)
+                auth.clickLogin()
+                auth.verifyLoginSuccess()
             })
-           
-    })
+
+        })
     })
     context("avec les indentifient invalide", () => {
         it("connexion echoue", () => {
-            auth.entrEmail("salimhadjimi@gmail.com")
-            auth.enterPassword("Salimsalim.94")
-            auth.clickLogin()
-            auth.errorConnect()
+            cy.fixture('users').then((dataSet) => {
+                auth.entrEmail(dataSet.invalidUser.email)
+                auth.enterPassword(dataSet.invalidUser.password)
+                auth.clickLogin()
+                auth.errorConnect()
+            })
+
         })
     })
 })
