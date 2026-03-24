@@ -6,12 +6,12 @@ import LoginPage from "../../../pom/login"
 describe("login fonctionnalité", () => {
     let auth = new LoginPage()
 
-    beforeEach(function() {
-        auth.visitLoginPage()
-        cy.fixture('users').then((users) => {
-            this.users = users
-        })
+   beforeEach(function() {
+    auth.visitLoginPage()
+    cy.fixture('users').then((users) => {
+        this.users = users
     })
+})
 
     context("avec des identifiants valides", () => {
         it("connexion réussie", function () {
