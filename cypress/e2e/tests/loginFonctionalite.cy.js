@@ -9,17 +9,15 @@ describe("login fonctionalité", () => {
     let auth = new LoginPage()
     beforeEach(() => {
         auth.visitLoginPage()
-        cy.fixture('users').as('users')
     })
 
     context("avec des identifient valide", () => {
         it("connexion reussite", () => {
             auth.entrEmail("salimhadjimi10@gmail.com")
             auth.enterPassword("Salimsalim.14071995")
-            auth.clickLogin()
+              auth.clickLogin()
             auth.verifyLoginSuccess()
-
-        })
+    })
     })
     context("avec les indentifient invalide", () => {
         it("connexion echoue", () => {
