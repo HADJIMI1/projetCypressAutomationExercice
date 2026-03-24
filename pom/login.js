@@ -6,21 +6,26 @@ import users from "../cypress/fixtures/users.json"
 
  export default class LoginPage {
 
+    userEmail=data.loginMail;
+    userPassword=data.loginPassword;
+    buttonLogin=data.loginButton
+
+
     visitLoginPage() {
         cy.visit(urlPage.urlLogin);
     }
 
     entrEmail(email) {
-        const mail = cy.get(data.loginMail)
+        const mail = cy.get(this.userEmail)
         mail.type(email);
     }
     enterPassword(passwordEnter) {
-        const password = cy.get(data.loginPassword)
+        const password = cy.get(this.userPassword)
         password.type(passwordEnter);
         
     }
     clickLogin(){
-        const loginButtonClick = cy.get(data.loginButton)
+        const loginButtonClick = cy.get(this.buttonLogin)
         loginButtonClick.click();
     }
     verifyLoginSuccess(){
