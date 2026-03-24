@@ -14,7 +14,7 @@ describe("login fonctionalité", () => {
 
     context("avec des identifient valide", () => {
         it("connexion reussite", () => {
-            auth.entrEmail(users.validUser.email)
+            auth.entrEmail("salimhadjimi10@gmail.com")
             auth.enterPassword("Salimsalim.14071995")
             auth.clickLogin()
             auth.verifyLoginSuccess()
