@@ -1,4 +1,7 @@
 import LoginPage from "../../../pom/login"
+import data from "../../../data/Locators.json"
+import users from "../../fixtures/users.json"
+
 
 
 
