@@ -21,8 +21,8 @@ let actionProduct =new ActionProductToCart() //closePopup
   })
   it("auth and Ajouter le produit to cart ",()=>{
     auth.clickSignupLogin()
-    login.entrEmail()
-    login.enterPassword()
+    login.entrEmail("salimhadjimi6400@gmail.com")
+    login.enterPassword("Salimsalim.14071995")
     login.clickLogin()
     inserPage.verifieVisibilityHomePage()
     addCartProdect.visitProductPolo()
