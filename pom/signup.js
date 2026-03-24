@@ -3,7 +3,7 @@ import users from "../cypress/fixtures/users.json"
 import urlPage from "../data/urlPage.json"
 /// <reference types="cypress" />
 
-export default class SignupLogin {
+export default class SignupPage {
 
         name=data.signupName;
         email='[data-qa="signup-email"]';
@@ -30,7 +30,10 @@ export default class SignupLogin {
         userPassword=data.loginPassword
         loginButton=data.loginButton
 
-    signupLoginsPage() {
+    goToPageLogin(){
+        cy.visit(urlPage.urlLogin)
+    }
+    signupPage() {
         
         // Remplissage des champs nom et email
         let signupName = cy.get(this.name)
@@ -62,12 +65,9 @@ export default class SignupLogin {
                 cy.get(this.creatAccount).should("be.visible").click()
                 cy.get(this.buttonContinue).should("be.visible").click({ force: true })
             } else {
-                const mail = cy.get(this.mailLogin)
-                mail.type(users.email);
-                const password = cy.get(this.userPassword)
-                password.type(users.password);
-                const loginButt = cy.get(this.loginButton)
-                loginButt.click();
+              const errorMesage=cy.get("p[style='color: red;']")
+              errorMesage.should("be.visible")
+              .and('contain','Email Address already exist!')
             }
         });
     }
