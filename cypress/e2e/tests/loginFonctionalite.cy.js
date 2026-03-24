@@ -3,26 +3,29 @@ import LoginPage from "../../../pom/login"
 
 
 
-describe("login fonctionalité", () => {
+describe("login fonctionnalité", () => {
     let auth = new LoginPage()
-    beforeEach(() => {
+
+    beforeEach(function() {
         auth.visitLoginPage()
-        cy.fixture('users').as('users')
+        cy.fixture('users').then((users) => {
+            this.users = users
+        })
     })
 
-    context("avec des identifient valide", () => {
-        it("connexion reussite",function (){
+    context("avec des identifiants valides", () => {
+        it("connexion reussite", function () {
             auth.entrEmail(this.users.validUser.email)
             auth.enterPassword(this.users.validUser.password)
             auth.clickLogin()
             auth.verifyLoginSuccess()
-
         })
     })
-    context("avec les indentifient invalide", () => {
-        it("connexion echoue",function (){
+
+    context("avec des identifiants invalides", () => {
+        it("connexion échoue", function () {
             auth.entrEmail(this.users.invalidUser.email)
-            auth.enterPassword(this.users.invalidUser.email)
+            auth.enterPassword(this.users.invalidUser.password)
             auth.clickLogin()
             auth.errorConnect()
         })
