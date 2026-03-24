@@ -1,4 +1,5 @@
 import data from "../data/Locators.json"
+import urlPage from "../data/urlPage.json"
 import users from "../cypress/fixtures/users.json"
 /// <reference types="cypress" />
 
@@ -6,7 +7,7 @@ import users from "../cypress/fixtures/users.json"
  export default class LoginPage {
 
     visitLoginPage() {
-        cy.visit("https://automationexercise.com/login");
+        cy.visit(urlPage.urlLogin);
     }
 
     entrEmail(email) {
