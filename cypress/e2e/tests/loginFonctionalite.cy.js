@@ -9,7 +9,7 @@ describe("login fonctionalité", () => {
     let auth = new LoginPage()
     beforeEach(() => {
         auth.visitLoginPage()
-        cy.fixture('users').as('users')
+      
     })
 
     context("avec des identifient valide", () => {
